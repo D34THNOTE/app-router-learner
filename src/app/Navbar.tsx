@@ -18,6 +18,9 @@ export default function Navbar() {
             <Link href="/eventRefresh" className="px-5 py-1 mx-2 bg-white text-blue-500 rounded-lg">
                 Revalidate on button press
             </Link>
+            <Link href="/getServerSidePropsWorkaround" className="px-5 py-1 mx-2 bg-white text-blue-500 rounded-lg">
+                SSR-esque workaround
+            </Link>
         </header>
     )
 }
