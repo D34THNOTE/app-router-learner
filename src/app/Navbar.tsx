@@ -21,6 +21,12 @@ export default function Navbar() {
             <Link href="/getServerSidePropsWorkaround" className="px-5 py-1 mx-2 bg-white text-blue-500 rounded-lg">
                 SSR-esque workaround
             </Link>
+            <Link href="/pagesUserList" className="px-5 py-1 mx-2 bg-white text-blue-500 rounded-lg">
+                Pages user list
+            </Link>
+            <Link href="/appUserList" className="px-5 py-1 mx-2 bg-white text-blue-500 rounded-lg">
+                App user list
+            </Link>
         </header>
     )
 }

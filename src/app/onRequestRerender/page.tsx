@@ -17,17 +17,7 @@ const fetchTimeOnReq = async () => {
 
 export default async function AlwaysRenderedPage() {
     const toDisplay = await fetchTimeOnReq();
-    await testDbConnection();
 
-    try {
-        const newUser = await User.create({
-            email: "example@example.com",
-            password: "hashedPassword"
-        });
-        console.log("New user created:", newUser.toJSON());
-    } catch (error) {
-        console.error("Error creating user:", error);
-    }
 
     return (
         <>

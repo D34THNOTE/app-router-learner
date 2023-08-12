@@ -2,7 +2,7 @@
 
 import { useQuery } from 'react-query'
 import {getTime} from "@/app/fetchingMethods/getTime";
-import {getUpdatedTime} from "@/app/fetchingMethods/getTimeServerAction";
+import {getUpdatedTime} from "@/app/fetchingMethods/getTimeServerActions";
 
 
 
