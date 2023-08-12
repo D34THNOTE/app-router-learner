@@ -30,7 +30,7 @@ export default function ProductList({ users }: InferGetServerSidePropsType<typeo
                 </tr>
                 </thead>
                 <tbody>
-                {listOfUsers.map((user, index) => (
+                {listOfUsers.map((user: any, index: any) => (
                     <tr key={index}>
                         <td className="border px-4 py-2">{user.email}</td>
                         <td className="border px-4 py-2">{user.password}</td>

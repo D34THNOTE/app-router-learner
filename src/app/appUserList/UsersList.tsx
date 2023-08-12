@@ -4,8 +4,7 @@ import {useQuery} from "react-query";
 import {getUsersServerAction} from "@/app/fetchingMethods/UserAPIServerActions";
 
 
-
-export default function UsersList( props ) {
+export default function UsersList( props: any ) {
 
     const { data } = useQuery({
         queryKey: ['users'],
@@ -23,7 +22,7 @@ export default function UsersList( props ) {
             </tr>
             </thead>
             <tbody>
-            {data.map((user, index) => (
+            {data.map((user: any, index: any) => (
                 <tr key={index}>
                     <td className="border px-4 py-2">{user.email}</td>
                     <td className="border px-4 py-2">{user.password}</td>

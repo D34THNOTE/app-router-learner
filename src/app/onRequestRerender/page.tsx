@@ -1,6 +1,4 @@
 import React from "react";
-import { testDbConnection } from "@/lib/postgres";
-import { User } from "@/models/User";
 
 const fetchTimeOnReq = async () => {
     const response = await fetch('http://worldtimeapi.org/api/timezone/Europe/Warsaw', {

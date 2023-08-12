@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 const { sequelize } = require('../lib/postgres');
 
-const User = sequelize.define('users', {
+export const User = sequelize.define('users', {
   email: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -13,4 +13,4 @@ const User = sequelize.define('users', {
   }
 });
 
-module.exports = { User };
+//module.exports = { User };
