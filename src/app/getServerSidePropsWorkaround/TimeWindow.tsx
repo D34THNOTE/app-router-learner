@@ -2,11 +2,14 @@
 
 import { useQuery } from 'react-query'
 import {getTime} from "@/app/fetchingMethods/getTime";
+import {getUpdatedTime} from "@/app/fetchingMethods/getTimeServerAction";
 
-export default function TimeWindow(props) {
+
+
+export default function TimeWindow(props: any) {
     const { data } = useQuery({
         queryKey: ['posts'],
-        queryFn: getTime,
+        queryFn: getUpdatedTime,
         initialData: props.toDisplay,
     })
 

@@ -7,23 +7,14 @@ import TimeWindow from "@/app/getServerSidePropsWorkaround/TimeWindow";
 import {getTime} from "@/app/fetchingMethods/getTime";
 
 
-// const fetchTimeOnReq = async () => {
-//     const response = await fetch('http://worldtimeapi.org/api/timezone/Europe/Warsaw', {
-//         cache: 'no-cache',
-//     });
-//
-//     const data = await response.json();
-//     const toReturn = new Date(data.datetime);
-//     return toReturn.toLocaleTimeString();
-// };
-
 export default async function WorkaroundMaybe() {
     const initialData = await getTime();
 
     return (
         <>
             <TimeWindow toDisplay={initialData}/>
-            <h3 className="mx-5 my-5">TEXT GOES HERE</h3>
+            <h3 className="mx-5 my-5">So this page utilizes the react-query library which can be found here with literal code showing how to start
+                using it in Next.js https://tanstack.com/query/v4/docs/react/guides/ssr</h3>
         </>
     );
 }
