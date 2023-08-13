@@ -1,4 +1,4 @@
-'use client'
+//'use client'
 
 import {useQuery} from "react-query";
 import {getUsersServerAction} from "@/app/fetchingMethods/UserAPIServerActions";
@@ -6,11 +6,12 @@ import {getUsersServerAction} from "@/app/fetchingMethods/UserAPIServerActions";
 
 export default function UsersList( props: any ) {
 
-    const { data } = useQuery({
-        queryKey: ['users'],
-        queryFn: getUsersServerAction,
-        initialData: props.toDisplay,
-    })
+    // const { data } = useQuery({
+    //     queryKey: ['users'],
+    //     queryFn: getUsersServerAction,
+    //     initialData: props.toDisplay,
+    // })
+    const data = props.toDisplay
 
 
     return (

@@ -24,9 +24,9 @@ export default function Navbar() {
             <Link href="/pagesUserList" className="px-5 py-1 mx-2 bg-white text-blue-500 rounded-lg">
                 Pages user list
             </Link>
-            <Link href="/appUserList" className="px-5 py-1 mx-2 bg-white text-blue-500 rounded-lg">
+            <a href="/appUserList" className="px-5 py-1 mx-2 bg-white text-blue-500 rounded-lg">
                 App user list
-            </Link>
+            </a>
         </header>
     )
 }
